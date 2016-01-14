@@ -1,55 +1,29 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-  <meta charset="UTF-8">
-  <title>99乘法</title>
-  <style>
-  html,body{margin:0;height:100%;}
-  table{border-collapse:collapse;}
-  table td{padding:5px;border:1px solid #ddd;}
-
-  </style>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>99乘法</title>
+<style>
+html,body{margin:0;height:100%;}
+table{border-collapse:collapse;}
+table td{padding:5px;border:1px solid #ddd;}
+</style>
 </head>
 
 <body>
+<script>
 
-<img class="img" src="img2.jpg">
-
-<script type='text/javascript' src="jquery.js"></script>
-<script type='text/javascript'>
-
-
-	var w = $(document.body).width();
-	var h = $(document.body).height();
-	var pw = $(".img").width();
-	var ph = $(".img").height();
-	
-function oImg(){ 
-	$('.img').css({ 
-		position: 'absolute', 
-		left    : (w - $('.img').outerWidth())/2, 
-		top     : (h - $('.img').outerHeight())/2 + $(document).scrollTop() 
-	}); 
-}); 
-oImg();
-
-/*
-	//九九乘法表
-	document.write("<table>");
-	for(var i = 1; i <= 9; i++){
-		document.write('<tr>');
-		for(var j = 1; j <= i; j++){
-			document.write('<td>' + j + ' x ' + i + ' = ' + (i*j) + '</td>');
-		}
-		document.write('</tr>');
+//九九乘法表
+document.write("<table>");
+for(var i = 1; i <= 9; i++){
+	document.write('<tr>');
+	for(var j = 1; j <= i; j++){
+		document.write('<td>' + j + ' x ' + i + ' = ' + (i*j) + '</td>');
 	}
-	document.write('</table>');
+	document.write('</tr>');
+}
+document.write('</table>');
 
-	//邮箱正则
-	var parten = /^([\w\.\-])+\@(([\w])+\.)+([0-9a-zA-Z]{2,4})$/;
-	str = "liuhai@163.com"
-	alert(parten.test(str));
-*/
 </script>
 </body>
 </html>
