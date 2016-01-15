@@ -1,4 +1,10 @@
-@charset "utf-8";
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
 html{
 	font-size:12px;
 }
@@ -10,7 +16,8 @@ body{
     -webkit-tap-highlight-color: transparent; /* For some Androids */
     -webkit-text-size-adjust:none;
     -webkit-touch-callout:behavior;
-    background:#FCFCFC;
+    background:#fff;
+	/*overflow:hidden;/* For mobile iScroll */
 }
 h1,h2,h2,h3,h4,h5,h6{
     margin:0;
@@ -57,6 +64,11 @@ textarea,input{
     -webkit-appearance:none;
     font-family:'微软雅黑';
 }
+a, button, input {
+  outline: 0;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
 input::-ms-clear{
     display:none;
 }
@@ -86,6 +98,12 @@ input::-ms-clear{
 }
 .f12{
 	font-size:12px;
+}
+.f14{
+	font-size:14px;
+}
+.f16{
+	font-size:16px;
 }
 .red {
 	color: red;
@@ -118,6 +136,6 @@ input::-ms-clear{
 	content:"";
 }
 /*html5 reset*/
-header,nav,article,section,aside,footer,figure,figcaption{
+header,nav,article,section,aside,footer,figure,figcaption,hgroup{
 	display:block;
 }
